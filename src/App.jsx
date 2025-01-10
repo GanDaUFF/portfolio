@@ -61,7 +61,7 @@ export default function App() {
           
         </div>
         {/* Placeholder for Additional Content */}
-        <div className="w-[300px] h-[510px] bg-stone-700 rounded-lg shadow-lg"></div>
+        <div className="w-[340px] h-[500px] bg-stone-700 rounded-lg shadow-lg"></div>
       </div>
     </div>
   );
