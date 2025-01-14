@@ -22,7 +22,7 @@ export default function App() {
     // Terceiro timer para exibir a NavBar
     const navBarTimer = setTimeout(() => {
       setShowNavBar(true);
-    }, 1500); // Após o movimento
+    }, 1100); // Após o movimento
 
     return () => {
       clearTimeout(scaleTimer);
@@ -44,8 +44,8 @@ export default function App() {
             <div className={`w-[600px] h-[350px] bg-stone-700 rounded-lg shadow-lg flex items-center justify-center transition-opacity duration-1000 ${hasMoved ? 'opacity-100' : 'opacity-0'}`} ></div>
             <div
               className={`w-[280px] h-[350px] bg-stone-500 rounded-lg transform transition-transform duration-1000 ease-in-out ${
-                hasScaled ? 'scale-100' : 'scale-110'
-              } ${hasMoved ? '' : '-translate-x-10 translate-y-5'}`} // Movimento reativado
+                hasScaled ? 'scale-100' : 'scale-125'
+              } ${hasMoved ? '' : '-translate-x-16 translate-y-5'}`} // Movimento reativado
             >
               <img src={foto} alt="Minha imagem" className="w-full h-full object-cover rounded-lg" />
             </div>
