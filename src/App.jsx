@@ -3,6 +3,7 @@ import './App.css';
 import foto from './assets/whatsapp.jpeg';
 import carGif from './assets/Carro.gif';
 import NavBar from './Components/NavBar';
+import 'font-awesome/css/font-awesome.min.css';
 
 export default function App() {
   const [hasScaled, setHasScaled] = useState(false);
@@ -73,11 +74,6 @@ export default function App() {
               />
             </div>
 
-
-
-
-
-
             <div
               className={`w-[280px] h-[350px] bg-stone-500 rounded-lg transform transition-transform duration-1000 ease-in-out ${hasScaled ? 'scale-100' : 'scale-125'
                 } ${hasMoved ? '' : '-translate-x-16 translate-y-5'}`} // Movimento reativado
@@ -93,7 +89,20 @@ export default function App() {
         {/* Placeholder for Additional Content */}
         <div className={`w-full h-[540px] flex flex-col gap-4 transition-opacity duration-1000 ${hasMoved ? 'opacity-100' : 'opacity-0'}`}>
           <div className="w-full h-5/6 bg-stone-700 rounded-lg shadow-lg"></div>
-          <div className="w-full h-1/6 bg-stone-700 rounded-lg shadow-lg"></div>
+          <div className="w-full h-1/6 bg-stone-700 rounded-lg shadow-lg items-center justify-center flex gap-10">
+            <a href="https://www.linkedin.com/in/henrique-cedraz-6590aa21b/" target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-linkedin fa-3x text-white hover:text-indigo-400"></i>
+            </a>
+            <a href="https://github.com/GanDaUFF" target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-github fa-3x text-white hover:text-indigo-400"></i>
+            </a>
+            <a href="https://www.instagram.com/henrique_googles/" target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-instagram fa-3x text-white hover:text-indigo-400"></i>
+            </a>
+            <a href="https://wa.me/5571993790255" target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-whatsapp fa-3x text-white hover:text-indigo-400"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
