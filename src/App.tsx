@@ -8,6 +8,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/Components/ui/popover
 import { Button } from "@/Components/ui/button";
 import { Plus } from "lucide-react";
 import Timeline from "./Components/timeline";
+import TechStack from "./Components/stack";
 
 // Define the type for translations
 interface Translations {
@@ -176,7 +177,9 @@ export default function App() {
             <div className="w-[500px] h-[175px] bg-stone-700 rounded-lg shadow-lg">
             <Timeline language={language as 'pt' | 'en' | 'es'} />
             </div>
-            <div className="w-[380px] h-[175px] bg-stone-700 rounded-lg shadow-lg"></div>
+            <div className="w-[380px] h-[175px] bg-stone-700 rounded-lg shadow-lg">
+            <TechStack />
+            </div>
           </div>
         </div>
 
