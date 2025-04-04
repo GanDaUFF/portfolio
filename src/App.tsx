@@ -7,6 +7,7 @@ import "font-awesome/css/font-awesome.min.css";
 import { Popover, PopoverContent, PopoverTrigger } from "@/Components/ui/popover";
 import { Button } from "@/Components/ui/button";
 import { Plus } from "lucide-react";
+import Timeline from "./Components/timeline";
 
 // Define the type for translations
 interface Translations {
@@ -172,7 +173,9 @@ export default function App() {
             </div>
           </div>
           <div className={`flex flex-row gap-4 transition-opacity duration-1000 ${hasMoved ? "opacity-100" : "opacity-0"}`}>
-            <div className="w-[500px] h-[175px] bg-stone-700 rounded-lg shadow-lg"></div>
+            <div className="w-[500px] h-[175px] bg-stone-700 rounded-lg shadow-lg">
+            <Timeline language={language as 'pt' | 'en' | 'es'} />
+            </div>
             <div className="w-[380px] h-[175px] bg-stone-700 rounded-lg shadow-lg"></div>
           </div>
         </div>
